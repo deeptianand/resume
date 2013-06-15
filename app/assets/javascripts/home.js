@@ -9,6 +9,7 @@ $(document).ready(function(){
 
 	$('#form').on("submit",function(e){
 		e.preventDefault();
+		var error ="Oops!Something went wrong! Please try again."
 		checkemail();
 		checkname();
 		checksubject();
@@ -23,6 +24,7 @@ $(document).ready(function(){
 				alert("Successfull");
 			},
 			error:function(){
+				
 				alert("Failure");
 			}
 			});

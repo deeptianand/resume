@@ -2,8 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-
 body{
 	background-color:yellow;
 	padding:200px;
@@ -77,6 +75,7 @@ h4{
 	font-style:italic;
 	color:gray;
 	font-size:20px;
+	margin-left:15px;
 }
 
 #personal{
@@ -98,23 +97,23 @@ h4{
 #year{
 	float:right;
 	font-size:12px;	
-	margin-top:12px;
+	margin-top:25px;
 	border:solid 1px #eee;
 	background-color:#eee;
 	padding:2px;
+	margin-right:10px;
 }
 
 .text{
 	clear:both;
-	padding:10px;	
-	
+			
 }
 
 #headings{
 	font-family:Georgia, serif;
 	color:#06A;
 	margin:0;
-	padding-top:10px;;
+	padding-top:27px;;
 	list-style:none;
 
 }
