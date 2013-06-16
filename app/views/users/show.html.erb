@@ -10,6 +10,16 @@
   <%= @user.email %>
 </p>
 
+<p>
+  <b>Subject:</b>
+  <%= @user.subject %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @user.body %>
+</p>
+
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

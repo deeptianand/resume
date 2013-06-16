@@ -1,6 +1,6 @@
-Resume::Application.routes.draw do
+Resume::Application.routes.draw do  
   resources :users
-
+  match '/users' => "users#create"
   root :to =>"home#index"
 
   # The priority is based upon order of creation:

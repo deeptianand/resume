@@ -1,9 +1,7 @@
 class UserMailer < ActionMailer::Base
-  default from: "from@example.com"
-
+	default :from => "anandeepti@gmail.com"
   def response_email(user)
   	@user = user
-  	@email = user.email
-  	mail(:to => 'anandeepti@gmail.com'), :subject => user.subject)
+  	mail(:to => user.email, :subject => user.subject)
   end
 end

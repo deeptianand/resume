@@ -17,7 +17,14 @@ body{
 	height:1000px;
 }
 
-
+#errormessage{
+	left:0px;
+	top:0px;
+	margin-left:50px;
+	margin-top:280px;
+	position:fixed;
+	color:green;
+}
 
 .header{
 	background-color:#606060;
@@ -183,6 +190,10 @@ a{
 	font-size:11px;
 	color:red;
 
+}
+
+#shoot_email{
+	color:white;	
 }
 
 #user_subject{

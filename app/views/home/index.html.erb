@@ -3,12 +3,16 @@
 	Resume
 </title>
 <body style="background-image:url('/assets/background.jpg');">
+	<span id="errormessage"></span>
 	<form id="form">
-		<input type="text" id="user_name" placeholder="Name">
-		<input type="text" id="user_email" placeholder="Email">
-		<input type="text" id="user_subject" placeholder="Subject">
-		<textarea id="user_body" placeholder="Content"></textarea>
+
+		<span id="shoot_email">Shoot me an email!</span>
+		<input type="text" name="name" id="user_name" placeholder="Name">
+		<input type="text" name="email" id="user_email" placeholder="Email">
+		<input type="text" name="subject" id="user_subject" placeholder="Subject">
+		<textarea id="user_body" name="body" placeholder="Content"></textarea>
 		<input type="submit" value="Send!">
+		<img id="gif_loader" src="/assets/ajax-loader.gif">
 	</form>
 
 	<div class="container">
@@ -50,7 +54,7 @@
 		<p id="headings">Danger Zone</p>
 		<ul>
 			<li> Gives you the safety score of any place in SF</li>
-			<li> Buit in 6 days by 4 developers </li>
+			<li> Built in 6 days by 4 developers </li>
 			<li>link:<a href="http://www.safesf.com">Danger Zone</a></li>
 		</ul>
 		</div>
