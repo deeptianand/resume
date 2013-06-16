@@ -9,6 +9,7 @@ $(document).ready(function(){
 
 	$('#form').on("submit",function(e){
 		e.preventDefault();
+		
 		var error ="Thanks!."
 		checkemail();
 		checkname();
@@ -16,15 +17,18 @@ $(document).ready(function(){
 		checkcontent();
 		var serializedData = $('#form').serialize();
 		if(checkemail() && checkname() && checksubject && checkcontent()){
+			$('#gif_loader').show();
 			$.ajax({
 			url: "/users",
 			type: "post",
 			data: serializedData,
 			success: function(){
 				alert("Successfull");
+				$('#gif_loader').hide();
 			},
 			error:function(){
 				$('#errormessage').text(error);
+				$('#gif_loader').hide();
 				
 			}
 			});

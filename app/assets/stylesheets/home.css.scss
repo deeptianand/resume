@@ -17,6 +17,11 @@ body{
 	height:1000px;
 }
 
+#gif_loader{
+	display:none;	
+
+}
+
 #errormessage{
 	left:0px;
 	top:0px;
@@ -183,7 +188,7 @@ a{
 	left:0px;
 	top:0px;
 	position:fixed;
-	margin-top:480px;
+	margin-top:510px;
 	color:white;
 	font-weight:bold;	
 	margin-left:49px;
