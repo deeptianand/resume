@@ -45,6 +45,7 @@ class UsersController < ApplicationController
     respond_to do |format|
     if @user.save
     UserMailer.response_email(@user).deliver  
+    UserMailer.alert_email(@user).deliver  
     end
    end
   end

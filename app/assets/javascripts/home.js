@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	var comments = "<div class=\"comments\"><span id =\"nameinfo\"></span><br><span id =\"emailinfo\"></span><br><span id =\"subjectinfo\"></span><br><span id =\"contentinfo\"></span></div>"
+	var comments = "<div class=\"comments\"><span id=\"errormessage\"></span><span id =\"nameinfo\"></span><br><span id =\"emailinfo\"></span><br><span id =\"subjectinfo\"></span><br><span id =\"contentinfo\"></span></div>"
 		$('#form').hide();
 	$('.email_out').on("click",function(e){
 		$('#form').slideToggle();
@@ -9,8 +9,7 @@ $(document).ready(function(){
 
 	$('#form').on("submit",function(e){
 		e.preventDefault();
-		
-		var error ="Thanks!."
+		var error ="Thanks!"
 		checkemail();
 		checkname();
 		checksubject();
@@ -36,7 +35,7 @@ $(document).ready(function(){
 	})
 });
 
-function sendEmail(){
+function sendEmail(data){
 	
 }
 
