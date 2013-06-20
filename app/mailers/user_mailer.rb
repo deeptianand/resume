@@ -6,6 +6,7 @@ class UserMailer < ActionMailer::Base
   end
 
   def alert_email(user)
+  	@user = user
   	mail(:to => "anandeepti@gmail.com", :subject => "You have a new email!")
   end
 end
