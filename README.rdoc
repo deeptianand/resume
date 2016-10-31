@@ -1,1 +1,1 @@
-== Resume website ==
+Simple Resume website built using ROR
